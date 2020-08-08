@@ -6,11 +6,11 @@
 
 - yarn tsc --init
     - tsconfig.json
-        >> "target": "es2017",
+        > "target": "es2017",
 
 - yarn add ts-node-dev -D
     - package.json
-        >> "scripts": {
+        > "scripts": {
             "start": "tsnd --transpile-only --ignore-watch node_modules --respawn src/server.ts"
         },
 
@@ -24,7 +24,7 @@
 
 ### Knex
 - package.json
-    >> "scripts": {
+    > "scripts": {
        "knex:migrate": "knex --knexfile knexfile.ts migrate:latest",
        "knex:migrate:rollback": "knex --knexfile knexfile.ts migrate:rollback"
     }
