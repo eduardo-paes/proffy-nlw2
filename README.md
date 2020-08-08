@@ -5,14 +5,14 @@
 - yarn add typescript -D
 
 - yarn tsc --init
-    >> tsconfig.json
-        >> "target": "es2017",
+    - tsconfig.json
+        "target": "es2017",
 
 - yarn add ts-node-dev -D
-    >> package.json
-        >> "scripts": {
-        >>    "start": "tsnd --transpile-only --ignore-watch node_modules --respawn src/server.ts"
-        >> },
+    - package.json
+        "scripts": {
+            "start": "tsnd --transpile-only --ignore-watch node_modules --respawn src/server.ts"
+        },
 
 ## SERVER
 ### Express
@@ -24,10 +24,10 @@
 
 ### Knex
 - package.json
-    >> "scripts": {
-       >> "knex:migrate": "knex --knexfile knexfile.ts migrate:latest",
-       >> "knex:migrate:rollback": "knex --knexfile knexfile.ts migrate:rollback"
-    >> }
+    - "scripts": {
+       "knex:migrate": "knex --knexfile knexfile.ts migrate:latest",
+       "knex:migrate:rollback": "knex --knexfile knexfile.ts migrate:rollback"
+    }
 
 - Instalar Extensão: SQLite
 
